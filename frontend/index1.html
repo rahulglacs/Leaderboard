@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            width: 100px;
+            height: 250px;
+            margin: 10px;
+            background-color: aqua;
+        }
+    </style>
+    <title>Click to Move Box</title>
+    
+</head>
+<body>
+    <div class="box" onclick="bringToFront(this)"><br>Rahul Yaduvanshi</div>
+    <div class="box" onclick="bringToFront(this)">Ayush</div>
+    
+    <divclass="box" onclick="bringToFront(this)">Rahul Gupta</divclass=>
+    
+    <divclass="box" onclick="bringToFront(this)">Ram</divclass=>
+
+
+    <script>
+        function bringToFront(box){
+            const parent=box.parentNode;
+            parent.insertBefore(box,parent.firstChild)
+        }
+    </script>
+    
+    
+
+
+
+            
+    
+    
+</body>
+</html>
